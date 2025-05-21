@@ -263,6 +263,9 @@ padding: 0 20px;
   .hero p {
     font-size: 1.4rem;
   }
+  .hero{
+    height: 800px;
+  }
 }
 
 /* Tablets and large phones */
@@ -273,6 +276,12 @@ padding: 0 20px;
 
   .hero p {
     font-size: 1.1rem;
+  }
+  .hero{
+    height: 600px;
+  }
+  .navbar a{
+    font-size: 0.85rem;
   }
 }
 
@@ -285,7 +294,12 @@ padding: 0 20px;
   .hero p {
     font-size: 1rem;
   }
-
+  .hero{
+    height: 72vh;
+  }
+  .navbar a{
+    font-size: 0.8rem;
+  }
 }
 
 /* Extra small devices (narrower than iPhone SE) */
@@ -296,6 +310,9 @@ padding: 0 20px;
 
   .hero p {
     font-size: 0.95rem;
+  }
+  .hero{
+    height: 70vh;
   }
 
 }
