@@ -280,9 +280,6 @@ padding: 0 20px;
   .hero{
     height: 600px;
   }
-  .navbar a{
-    font-size: 0.85rem;
-  }
 }
 
 /* Small phones (landscape or portrait) */
@@ -296,6 +293,7 @@ padding: 0 20px;
   }
   .hero{
     height: 72vh;
+    justify-content: center;
   }
   .navbar a{
     font-size: 0.8rem;
@@ -313,6 +311,10 @@ padding: 0 20px;
   }
   .hero{
     height: 70vh;
+    justify-content: center;
+  }
+  .navbar a{
+    font-size: 0.8rem;
   }
 
 }
