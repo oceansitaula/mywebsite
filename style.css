@@ -61,11 +61,11 @@ body {
 }
 
 .hero {
+  height: 1000px;
   background-image: url('./bgpic.jpg');
-  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-position: top center; /* CENTER the image horizontally and vertically */
   text-align: center;
   color: var(--white);
   text-shadow:
@@ -74,34 +74,13 @@ body {
     0 0 10px rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(5px);
   font-weight: 500;
-  padding: 15vh 20px; /* Responsive vertical spacing */
-  min-height: 60vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .hero {
-    background-attachment: scroll;
-    padding: 10vh 15px;
-    min-height: 50vh;
-    background-size: cover;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero p {
-    font-size: 1.2rem;
-  }
-}
-
 
 .hero h1 {
   font-size: 4rem;
+  padding-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -274,15 +253,53 @@ padding: 0 20px;
   background-color: var(--dark-green);
 }
 
-@media (max-width: 768px) {
+
+/* Large tablets / small laptops */
+@media (max-width: 1024px) {
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .hero p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
+
+/* Tablets and large phones */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Small phones (landscape or portrait) */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+}
+
+/* Extra small devices (narrower than iPhone SE) */
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+}
+
 @media (max-width: 500px) {
   form {
     padding: 0 10px;
